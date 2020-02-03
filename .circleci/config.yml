@@ -1,0 +1,75 @@
+version: 2.1
+
+partial:
+  node-image: &node-image circleci/node:12.14.1
+
+jobs:
+  deps-install:
+    docker:
+      - image: *node-image
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - npm-install-node12-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+            - npm-install-node12-{{ checksum "package.json" }}
+            - npm-install-node12
+          paths:
+            - node_modules
+      - run:
+          command: npm install
+      - save_cache:
+          key: npm-install-node12-{{ checksum "package.json" }}-{{ checksum "package-lock.json" }}
+          paths:
+            - node_modules
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - node_modules
+
+  code-lint:
+    docker:
+      - image: *node-image
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: npm run lint
+
+  commit-lint:
+    docker:
+      - image: *node-image
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: npm run lint:commit:ci
+
+  publish:
+    docker:
+      - image: *node-image
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project
+      - run: npm run publish
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - deps-install
+      - code-lint:
+          requires:
+            - deps-install
+      - commit-lint:
+          requires:
+            - deps-install
+      - publish:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - code-lint
+            - commit-lint

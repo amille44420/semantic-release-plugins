@@ -1,0 +1,38 @@
+{
+  "name": "@amille/semantic-release-plugins",
+  "version": "0.0.0-development",
+  "description": "bunch of custom plugins for semantic-release",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\"",
+    "lint:fix": "npm run lint -- --fix",
+    "lint:commit": "commitlint",
+    "lint:commit:ci": "commitlint-circle",
+    "publish": "semantic-release"
+  },
+  "repository": "github:amille44420/semantic-release-plugins",
+  "keywords": [
+    "helm",
+    "semantic-release",
+    "docker"
+  ],
+  "author": "Adrien Mille <adrien.mille.aer@gmail.com>",
+  "license": "MIT",
+  "bugs": "https://github.com/amille44420/semantic-release-plugins/issues",
+  "homepage": "https://github.com/amille44420/semantic-release-plugins",
+  "devDependencies": {
+    "@amille/eslint-config": "^1.2.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.0",
+    "@semantic-release/github": "^7.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "commitlint": "^8.3.5",
+    "commitlint-circle": "^1.0.0",
+    "eslint": "^6.8.0",
+    "prettier": "^1.19.1",
+    "semantic-release": "^17.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
