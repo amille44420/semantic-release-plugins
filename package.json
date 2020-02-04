@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "bunch of custom plugins for semantic-release",
   "scripts": {
-    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\"",
+    "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint:fix": "npm run lint -- --fix",
     "lint:commit": "commitlint",
     "lint:commit:ci": "commitlint-circle",
@@ -34,5 +34,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "js-yaml": "^3.13.1"
   }
 }
