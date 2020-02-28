@@ -30,7 +30,7 @@ Add the plugin `@amille/semantic-release-tools/dockerize` to your `.releaserc` f
 }
 ```
 
-And finally configure it using environment variables
+And finally you may either configure it using environment variables
 
 | Variable name   | Mandatory          | Description                           |
 | --------------- | ------------------ | ------------------------------------- |
@@ -38,6 +38,25 @@ And finally configure it using environment variables
 | DOCKER_IMAGE    | :heavy_check_mark: | Image name (ex: `hello-world`)        |
 | DOCKER_LOGIN    |                    | Username for docker login             |
 | DOCKER_PASSWORD |                    | Password for docker login             |
+
+Or configure it using plugin configuration.
+The environment variable will be used as fallback.
+
+```json
+{
+    "plugins": [
+        [
+            "@amille/semantic-release-tools/dockerize",
+            {
+                "registry": "hub.domain.co",
+                "image": "my-image",
+                "login": "user",
+                "password": "p@ssw0rd!"
+            }
+        ]
+    ]
+}
+```
 
 ## Update app version in helm chart
 
