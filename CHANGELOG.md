@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/amille44420/semantic-release-plugins/compare/v1.1.0...v1.2.0) (2020-02-28)
+
+
+### Features
+
+* provide plugin configuration for dockerize ([1a33be3](https://github.com/amille44420/semantic-release-plugins/commit/1a33be32eea494c047f168aac31e3fa9fdea9750))
+
 # [1.1.0](https://github.com/amille44420/semantic-release-plugins/compare/v1.0.0...v1.1.0) (2020-02-04)
 
 
