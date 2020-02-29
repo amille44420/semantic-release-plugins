@@ -38,6 +38,7 @@ And finally you may either configure it using environment variables
 | DOCKER_IMAGE    | :heavy_check_mark: | Image name (ex: `hello-world`)        |
 | DOCKER_LOGIN    |                    | Username for docker login             |
 | DOCKER_PASSWORD |                    | Password for docker login             |
+| DOCKER_FILE     |                    | Dockerfile                            |
 
 Or configure it using plugin configuration.
 The environment variable will be used as fallback.
@@ -49,7 +50,8 @@ The environment variable will be used as fallback.
             "@amille/semantic-release-tools/dockerize",
             {
                 "registry": "hub.domain.co",
-                "image": "my-image"
+                "image": "my-image",
+                "dockerfile": "other.Dockerfile"
             }
         ]
     ]
