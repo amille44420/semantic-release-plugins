@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/amille44420/semantic-release-plugins/compare/v1.2.0...v2.0.0) (2020-02-29)
+
+
+### Features
+
+* remove login from dockerize ([ed19ae3](https://github.com/amille44420/semantic-release-plugins/commit/ed19ae387edb2e010eccc16f7d1d0d5779fba1b5))
+
+
+### BREAKING CHANGES
+
+* manual login need to be made ahead
+
 # [1.2.0](https://github.com/amille44420/semantic-release-plugins/compare/v1.1.0...v1.2.0) (2020-02-28)
 
 

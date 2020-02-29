@@ -1,6 +1,6 @@
 {
   "name": "@amille/semantic-release-plugins",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "bunch of custom plugins for semantic-release",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
