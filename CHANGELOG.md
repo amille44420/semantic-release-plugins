@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.0.0...v2.1.0) (2020-02-29)
+
+
+### Features
+
+* **dockerize:** add an option to specify dockerfile ([ad0b736](https://github.com/amille44420/semantic-release-plugins/commit/ad0b7369709ca3ef06a48890c7466d4879e34fab))
+
 # [2.0.0](https://github.com/amille44420/semantic-release-plugins/compare/v1.2.0...v2.0.0) (2020-02-29)
 
 
