@@ -49,9 +49,7 @@ The environment variable will be used as fallback.
             "@amille/semantic-release-tools/dockerize",
             {
                 "registry": "hub.domain.co",
-                "image": "my-image",
-                "login": "user",
-                "password": "p@ssw0rd!"
+                "image": "my-image"
             }
         ]
     ]

@@ -3,8 +3,6 @@ const { exec } = require('child_process');
 const getConfig = pluginConfig => ({
     registry: pluginConfig.registry || process.env.DOCKER_REGISTRY,
     image: pluginConfig.image || process.env.DOCKER_IMAGE,
-    login: pluginConfig.login || process.env.DOCKER_LOGIN,
-    pwd: pluginConfig.pwd || process.env.DOCKER_PASSWORD,
 });
 
 const runDocker = cmd =>
@@ -37,25 +35,10 @@ const getImageName = (tag, config) => {
     return `${registry}/${image}:${tag}`;
 };
 
-const dockerLogin = async (logger, config) => {
-    const { registry, login, pwd } = config;
-
-    if (registry) {
-        logger.log('Docker login to %s', registry);
-        await runDocker(`login ${registry} -u ${login} -p ${pwd}`);
-    } else if (login) {
-        logger.log('Docker login to official hub');
-        await runDocker(`login -u ${login} -p ${pwd}`);
-    }
-};
-
 const prepare = async (pluginConfig, context) => {
     const config = getConfig(pluginConfig);
     const { nextRelease, logger } = context;
     const { version, channel } = nextRelease;
-
-    // we must login first
-    await dockerLogin(logger, config);
 
     // build a versioned image
     const versionTag = getImageName(version, config);
