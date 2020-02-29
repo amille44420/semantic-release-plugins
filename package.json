@@ -20,17 +20,17 @@
   "bugs": "https://github.com/amille44420/semantic-release-plugins/issues",
   "homepage": "https://github.com/amille44420/semantic-release-plugins",
   "devDependencies": {
-    "@amille/eslint-config": "^1.2.1",
+    "@amille/eslint-config": "^1.2.4",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/github": "^7.0.0",
+    "@semantic-release/github": "^7.0.4",
     "@semantic-release/git": "^9.0.0",
     "commitlint": "^8.3.5",
     "commitlint-circle": "^1.0.0",
     "eslint": "^6.8.0",
     "prettier": "^1.19.1",
-    "semantic-release": "^17.0.2"
+    "semantic-release": "^17.0.4"
   },
   "publishConfig": {
     "access": "public"
