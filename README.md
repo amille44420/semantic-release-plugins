@@ -58,6 +58,21 @@ The environment variable will be used as fallback.
 }
 ```
 
+You may use plugin settings to inject the version as `build arg`
+
+```json
+{
+    "plugins": [
+        [
+            "@amille/semantic-release-plugins/dockerize",
+            {
+                "argVersion": "VERSION"
+            }
+        ]
+    ]
+}
+```
+
 ## Update app version in helm chart
 
 You may automatically update the `appVersion` in a helm chart file.

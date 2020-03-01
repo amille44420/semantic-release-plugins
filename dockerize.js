@@ -4,6 +4,7 @@ const getConfig = pluginConfig => ({
     registry: pluginConfig.registry || process.env.DOCKER_REGISTRY,
     image: pluginConfig.image || process.env.DOCKER_IMAGE,
     dockerfile: pluginConfig.dockerfile || process.env.DOCKER_FILE,
+    argVersion: pluginConfig.argVersion,
 });
 
 const runDocker = cmd =>
@@ -37,14 +38,25 @@ const getImageName = (tag, config) => {
 };
 
 const prepare = async (pluginConfig, context) => {
-    const config = getConfig(pluginConfig);
+    const { argVersion, ...config } = getConfig(pluginConfig);
     const { nextRelease, logger } = context;
     const { version, channel, dockerfile } = nextRelease;
 
     // build a versioned image
     const versionTag = getImageName(version, config);
+
+    const command = [
+        'build',
+        `-t ${versionTag}`,
+        dockerfile && `-f ${dockerfile}`,
+        argVersion && `--build-arg ${argVersion}=${version}`,
+        '.',
+    ]
+        .filter(Boolean)
+        .join(' ');
+
     logger.log('Docker building for %s', versionTag);
-    await runDocker(['build', `-t ${versionTag}`, dockerfile && `-f ${dockerfile}`, '.'].filter(Boolean).join(' '));
+    await runDocker(command);
 
     if (channel) {
         // tag the image for the channel
