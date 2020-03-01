@@ -1,3 +1,5 @@
+## [2.1.1](https://github.com/amille44420/semantic-release-plugins/compare/v2.1.0...v2.1.1) (2020-03-01)
+
 # [2.1.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.0.0...v2.1.0) (2020-02-29)
 
 
