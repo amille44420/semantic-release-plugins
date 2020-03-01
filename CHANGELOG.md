@@ -1,3 +1,15 @@
+# [2.2.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.1.1...v2.2.0) (2020-03-01)
+
+
+### Bug Fixes
+
+* **dockerize:** fix critical error on build command ([8dad490](https://github.com/amille44420/semantic-release-plugins/commit/8dad49029595051f1b819c5942f42e59389b77e7))
+
+
+### Features
+
+* **dockerize:** provide an option to provide the version as build arg ([a8541c1](https://github.com/amille44420/semantic-release-plugins/commit/a8541c16dfa0cc2deed4c2d310be708569acb4b2))
+
 ## [2.1.1](https://github.com/amille44420/semantic-release-plugins/compare/v2.1.0...v2.1.1) (2020-03-01)
 
 # [2.1.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.0.0...v2.1.0) (2020-02-29)
