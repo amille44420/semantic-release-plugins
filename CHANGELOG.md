@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/amille44420/semantic-release-plugins/compare/v2.2.0...v2.2.1) (2020-03-01)
+
+
+### Bug Fixes
+
+* **dockerize:** fix critical error when using a dockerfile ([4a71f9e](https://github.com/amille44420/semantic-release-plugins/commit/4a71f9e4ae70d188d123744fd41b4f9f60116352))
+
 # [2.2.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.1.1...v2.2.0) (2020-03-01)
 
 
