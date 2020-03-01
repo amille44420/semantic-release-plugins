@@ -38,9 +38,9 @@ const getImageName = (tag, config) => {
 };
 
 const prepare = async (pluginConfig, context) => {
-    const { argVersion, ...config } = getConfig(pluginConfig);
+    const { argVersion, dockerfile, ...config } = getConfig(pluginConfig);
     const { nextRelease, logger } = context;
-    const { version, channel, dockerfile } = nextRelease;
+    const { version, channel } = nextRelease;
 
     // build a versioned image
     const versionTag = getImageName(version, config);
