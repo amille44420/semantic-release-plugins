@@ -44,7 +44,7 @@ const prepare = async (pluginConfig, context) => {
     // build a versioned image
     const versionTag = getImageName(version, config);
     logger.log('Docker building for %s', versionTag);
-    await runDocker(['build', `-t ${versionTag}`, dockerfile && `-f ${dockerfile}`, '.'].filter(Boolean));
+    await runDocker(['build', `-t ${versionTag}`, dockerfile && `-f ${dockerfile}`, '.'].filter(Boolean).join(' '));
 
     if (channel) {
         // tag the image for the channel
