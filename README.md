@@ -8,24 +8,24 @@ Provide a bunch of custom plugins for `semantic-release`.
 
 ```sh
 # install using npm
-npm install --save-dev @amille/semantic-release-tools
+npm install --save-dev @amille/semantic-release-plugins
 
 # or using yarn
-yarn add -D @amille/semantic-release-tools
+yarn add -D @amille/semantic-release-plugins
 ```
 
 ## Build docker image
 
 You may automatically build and push docker.
 
-Add the plugin `@amille/semantic-release-tools/dockerize` to your `.releaserc` file.
+Add the plugin `@amille/semantic-release-plugins/dockerize` to your `.releaserc` file.
 
 ```json
 {
     "plugins": [
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
-        "@amille/semantic-release-tools/dockerize"
+        "@amille/semantic-release-plugins/dockerize"
     ]
 }
 ```
@@ -47,7 +47,7 @@ The environment variable will be used as fallback.
 {
     "plugins": [
         [
-            "@amille/semantic-release-tools/dockerize",
+            "@amille/semantic-release-plugins/dockerize",
             {
                 "registry": "hub.domain.co",
                 "image": "my-image",
@@ -62,7 +62,7 @@ The environment variable will be used as fallback.
 
 You may automatically update the `appVersion` in a helm chart file.
 
-Add the plugin `@amille/semantic-release-tools/helmChartUpdate` to your `.releaserc` file.
+Add the plugin `@amille/semantic-release-plugins/helmChartUpdate` to your `.releaserc` file.
 
 ```json
 {
@@ -70,7 +70,7 @@ Add the plugin `@amille/semantic-release-tools/helmChartUpdate` to your `.releas
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         [
-            "@amille/semantic-release-tools/helmChartUpdate",
+            "@amille/semantic-release-plugins/helmChartUpdate",
             {
                 "chart": "./chart/Chart.yaml"
             }
