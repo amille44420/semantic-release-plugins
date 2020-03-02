@@ -10,19 +10,15 @@ const getChartPath = ({ chart }) => {
     return path.resolve(process.cwd(), chart);
 };
 
-const prepare = pluginConfig => {
-    const chart = getChartPath(pluginConfig);
-
-    if (!fs.existsSync(chart)) {
-        throw new Error(`${chart} chart file not found`);
-    }
-};
-
-const publish = (pluginConfig, context) => {
+const prepare = (pluginConfig, context) => {
+    const chartFile = getChartPath(pluginConfig);
     const { nextRelease, logger } = context;
     const { version } = nextRelease;
 
-    const chartFile = getChartPath(pluginConfig);
+    if (!fs.existsSync(chartFile)) {
+        throw new Error(`${chartFile} chart file not found`);
+    }
+
     const rawChart = fs.readFileSync(chartFile, 'utf8');
     const chart = yaml.safeLoad(rawChart);
     const newChart = yaml.safeDump({ ...chart, appVersion: version });
@@ -30,4 +26,4 @@ const publish = (pluginConfig, context) => {
     logger.log('Chart app version has been set to %s', version);
 };
 
-module.exports = { prepare, publish };
+module.exports = { prepare };
