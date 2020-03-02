@@ -4,7 +4,7 @@ const yaml = require('js-yaml');
 
 const getChartPath = ({ chart }) => {
     if (!chart) {
-        throw new Error('Chart is required for @amille/semantic-release-plugins/helmChartUpdate');
+        throw new Error('Chart is required for @amille/semantic-release-plugins/updateHelmChart');
     }
 
     return path.resolve(process.cwd(), chart);

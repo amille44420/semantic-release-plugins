@@ -77,7 +77,7 @@ You may use plugin settings to inject the version as `build arg`
 
 You may automatically update the `appVersion` in a helm chart file.
 
-Add the plugin `@amille/semantic-release-plugins/helmChartUpdate` to your `.releaserc` file.
+Add the plugin `@amille/semantic-release-plugins/updateHelmChart` to your `.releaserc` file.
 
 ```json
 {
@@ -85,7 +85,7 @@ Add the plugin `@amille/semantic-release-plugins/helmChartUpdate` to your `.rele
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         [
-            "@amille/semantic-release-plugins/helmChartUpdate",
+            "@amille/semantic-release-plugins/updateHelmChart",
             {
                 "chart": "./chart/Chart.yaml"
             }
