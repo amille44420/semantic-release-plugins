@@ -1,3 +1,22 @@
+# [3.0.0](https://github.com/amille44420/semantic-release-plugins/compare/v2.2.1...v3.0.0) (2020-03-07)
+
+
+### chore
+
+* **helmChartUpdate:** rename helmChartUpdate as updateHelmChart ([cda6881](https://github.com/amille44420/semantic-release-plugins/commit/cda6881802b0cd21a58179f7f1098f946040eaab))
+
+
+### Features
+
+* add plugins archive and sentryRelease ([8932b97](https://github.com/amille44420/semantic-release-plugins/commit/8932b97c7eefb4c7158911f074ab3f3f3c0dd758))
+* **helmChartAndUpdate:** move the chart update in prepre step ([3f1756c](https://github.com/amille44420/semantic-release-plugins/commit/3f1756c388a74027181834d3ee4fa3cc2de30f9c))
+
+
+### BREAKING CHANGES
+
+* **helmChartUpdate:** the plugin helmChartUpdate is renamed as updateHelmChart
+* **helmChartAndUpdate:** the chart file is being updated in the prepare step instead of the publish step
+
 ## [2.2.1](https://github.com/amille44420/semantic-release-plugins/compare/v2.2.0...v2.2.1) (2020-03-01)
 
 
