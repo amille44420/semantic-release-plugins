@@ -24,8 +24,8 @@
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/github": "^7.0.4",
     "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.4",
     "commitlint": "^8.3.5",
     "commitlint-circle": "^1.0.0",
     "eslint": "^6.8.0",
@@ -36,6 +36,8 @@
     "access": "public"
   },
   "dependencies": {
-    "js-yaml": "^3.13.1"
+    "glob": "^7.1.6",
+    "js-yaml": "^3.13.1",
+    "jszip": "^3.2.2"
   }
 }

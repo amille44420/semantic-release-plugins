@@ -93,3 +93,48 @@ Add the plugin `@amille/semantic-release-plugins/updateHelmChart` to your `.rele
     ]
 }
 ```
+
+## Create archive
+
+You may automatically create archives.
+
+Add the plugin `@amille/semantic-release-plugins/archive` to your `.releaserc` file.
+
+```json
+{
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@amille/semantic-release-plugins/archive",
+            {
+                "output": "./archive.zip",
+                "assets": ["path/to/file", "glob/pattern/*.js", { "pattern": "path/dir", "relative": "path/" }],
+                "globOptions": {}
+            }
+        ]
+    ]
+}
+```
+
+## Create sentry release
+
+You may automatically create sentry releases (this plugins requires the cli client to be available).
+
+Add the plugin `@amille/semantic-release-plugins/sentryRelease` to your `.releaserc` file.
+
+```json
+{
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@amille/semantic-release-plugins/sentryRelease",
+            {
+                "project": "my-project",
+                "sourcemaps": ["build/"],
+            }
+        ]
+    ]
+}
+```
