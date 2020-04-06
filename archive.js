@@ -3,8 +3,11 @@ const path = require('path');
 const glob = require('glob');
 const JSZip = require('jszip');
 
+const defaultGlobOptions = { nodir: true, dot: true };
+
 const prepare = pluginConfig => {
-    const { output, assets, globOptions } = pluginConfig;
+    const { output, assets, globOptions: customGlobOptions } = pluginConfig;
+    const globOptions = { ...defaultGlobOptions, ...customGlobOptions };
     const zip = new JSZip();
 
     if (!output) {
