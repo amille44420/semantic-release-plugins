@@ -1,3 +1,10 @@
+# [3.1.0](https://github.com/amille44420/semantic-release-plugins/compare/v3.0.2...v3.1.0) (2020-04-06)
+
+
+### Features
+
+* **archive:** exclude directories and include dot files by default ([5bc4bde](https://github.com/amille44420/semantic-release-plugins/commit/5bc4bde0b079583cf9c0242b52235d6fd0395087))
+
 ## [3.0.2](https://github.com/amille44420/semantic-release-plugins/compare/v3.0.1...v3.0.2) (2020-04-02)
 
 ## [3.0.1](https://github.com/amille44420/semantic-release-plugins/compare/v3.0.0...v3.0.1) (2020-03-24)
