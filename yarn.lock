@@ -4,7 +4,7 @@
 
 "@amille/eslint-config@^1.3.5":
   version "1.3.5"
-  resolved "https://registry.npmjs.org/@amille/eslint-config/-/eslint-config-1.3.5.tgz#dac70a6bbefa9dc83a590f5eec4a3355b23b9377"
+  resolved "https://registry.yarnpkg.com/@amille/eslint-config/-/eslint-config-1.3.5.tgz#dac70a6bbefa9dc83a590f5eec4a3355b23b9377"
   integrity sha512-JFauKvunKBjKvQk2vWBpQV/+YVAha9pf8chAHOCmeBc193fpWC3rvISxF4e5qjpE1RTz4ULLfKbCCY1sRD1iFg==
   dependencies:
     eslint-config-airbnb "^18.1.0"
