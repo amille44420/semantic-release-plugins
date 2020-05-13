@@ -1,13 +1,13 @@
 {
   "name": "@amille/semantic-release-plugins",
-  "version": "3.1.1",
+  "version": "0.0.0-development",
   "description": "bunch of custom plugins for semantic-release",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore --ignore-pattern \"!**/.*\" .",
     "lint:fix": "npm run lint -- --fix",
     "lint:commit": "commitlint",
     "lint:commit:ci": "commitlint-circle",
-    "publish": "semantic-release"
+    "release": "semantic-release"
   },
   "repository": "github:amille44420/semantic-release-plugins",
   "keywords": [
@@ -20,17 +20,14 @@
   "bugs": "https://github.com/amille44420/semantic-release-plugins/issues",
   "homepage": "https://github.com/amille44420/semantic-release-plugins",
   "devDependencies": {
-    "@amille/eslint-config": "^1.3.4",
+    "@amille/eslint-config": "^1.3.5",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@semantic-release/changelog": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/github": "^7.0.4",
     "commitlint": "^8.3.5",
     "commitlint-circle": "^1.0.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.0.0",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.4"
+    "semantic-release": "^17.0.7"
   },
   "publishConfig": {
     "access": "public"
@@ -38,6 +35,6 @@
   "dependencies": {
     "glob": "^7.1.6",
     "js-yaml": "^3.13.1",
-    "jszip": "^3.2.2"
+    "jszip": "^3.4.0"
   }
 }

@@ -17,14 +17,6 @@
     ],
     "@semantic-release/release-notes-generator",
     "@semantic-release/npm",
-    "@semantic-release/changelog",
-    [
-      "@semantic-release/git",
-      {
-        "assets": ["CHANGELOG.md", "package.json"],
-        "message": "chore(release): ${nextRelease.version}"
-      }
-    ],
     "@semantic-release/github"
   ]
 }
