@@ -23,6 +23,7 @@ jobs:
           key: yarn-install-node12-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
           paths:
             - node_modules
+            - ~/.cache/yarn
       - persist_to_workspace:
           root: ~/project
           paths:
