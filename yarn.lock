@@ -3,18 +3,18 @@
 
 
 "@amille/eslint-config@^1.3.5":
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/@amille/eslint-config/-/eslint-config-1.3.5.tgz#dac70a6bbefa9dc83a590f5eec4a3355b23b9377"
-  integrity sha512-JFauKvunKBjKvQk2vWBpQV/+YVAha9pf8chAHOCmeBc193fpWC3rvISxF4e5qjpE1RTz4ULLfKbCCY1sRD1iFg==
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@amille/eslint-config/-/eslint-config-1.4.0.tgz#f671bf8e099c3f7a22f12cc57c9b18ac0f053182"
+  integrity sha512-xKLcos740OVNNpoNgDjsl4ayWwtXUxvxAI/Ff173YG0gTHR0zWhL9EGVxckchuRVI/Iq4wMSy16JSzk9DH7apw==
   dependencies:
     eslint-config-airbnb "^18.1.0"
     eslint-config-airbnb-base "^14.1.0"
-    eslint-config-prettier "^6.10.0"
-    eslint-plugin-import "^2.20.1"
+    eslint-config-prettier "^6.11.0"
+    eslint-plugin-import "^2.20.2"
     eslint-plugin-jsx-a11y "^6.2.3"
-    eslint-plugin-prettier "^3.1.2"
-    eslint-plugin-react "^7.19.0"
-    eslint-plugin-react-hooks "^4.0.0"
+    eslint-plugin-prettier "^3.1.3"
+    eslint-plugin-react "^7.20.0"
+    eslint-plugin-react-hooks "^4.0.4"
 
 "@babel/code-frame@^7.0.0":
   version "7.8.3"
@@ -1695,9 +1695,9 @@ eslint-config-airbnb@^18.1.0:
     object.assign "^4.1.0"
     object.entries "^1.1.1"
 
-eslint-config-prettier@^6.10.0:
+eslint-config-prettier@^6.11.0:
   version "6.11.0"
-  resolved "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.11.0.tgz#f6d2238c1290d01c859a8b5c1f7d352a0b0da8b1"
   integrity sha512-oB8cpLWSAjOVFEJhhyMZh6NOEOtBVziaqdDQ86+qhDHFbZXoRTM7pNSvFRfW/W/L/LrQ38C99J5CGuRBBzBsdA==
   dependencies:
     get-stdin "^6.0.0"
@@ -1718,9 +1718,9 @@ eslint-module-utils@^2.4.1:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
-eslint-plugin-import@^2.20.1:
+eslint-plugin-import@^2.20.2:
   version "2.20.2"
-  resolved "https://registry.npmjs.org/eslint-plugin-import/-/eslint-plugin-import-2.20.2.tgz#91fc3807ce08be4837141272c8b99073906e588d"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.20.2.tgz#91fc3807ce08be4837141272c8b99073906e588d"
   integrity sha512-FObidqpXrR8OnCh4iNsxy+WACztJLXAHBO5hK79T1Hc77PgQZkyDGA5Ag9xAvRpglvLNxhH/zSmZ70/pZ31dHg==
   dependencies:
     array-includes "^3.0.3"
@@ -1751,22 +1751,22 @@ eslint-plugin-jsx-a11y@^6.2.3:
     has "^1.0.3"
     jsx-ast-utils "^2.2.1"
 
-eslint-plugin-prettier@^3.1.2:
+eslint-plugin-prettier@^3.1.3:
   version "3.1.3"
-  resolved "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.3.tgz#ae116a0fc0e598fdae48743a4430903de5b4e6ca"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.3.tgz#ae116a0fc0e598fdae48743a4430903de5b4e6ca"
   integrity sha512-+HG5jmu/dN3ZV3T6eCD7a4BlAySdN7mLIbJYo0z1cFQuI+r2DiTJEFeF68ots93PsnrMxbzIZ2S/ieX+mkrBeQ==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-react-hooks@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.1.tgz#c90fbb8726e35aadff94c9613ebd5c4de375412b"
-  integrity sha512-toTyfu0gFyZD9Ru3QEeVwfeK8T0lf31bZaknmbFRSDbiJdrzHKNBOh2NIwlepLLpvnhwMWWNbq3t+x0VoyQ1iw==
+eslint-plugin-react-hooks@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.0.4.tgz#aed33b4254a41b045818cacb047b81e6df27fa58"
+  integrity sha512-equAdEIsUETLFNCmmCkiCGq6rkSK5MoJhXFPFYeUebcjKgBmWWcgVOqZyQC8Bv1BwVCnTq9tBxgJFgAJTWoJtA==
 
-eslint-plugin-react@^7.19.0:
-  version "7.19.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-react/-/eslint-plugin-react-7.19.0.tgz#6d08f9673628aa69c5559d33489e855d83551666"
-  integrity sha512-SPT8j72CGuAP+JFbT0sJHOB80TX/pu44gQ4vXH/cq+hQTiY2PuZ6IHkqXJV6x1b28GDdo1lbInjKUrrdUf0LOQ==
+eslint-plugin-react@^7.20.0:
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.20.0.tgz#f98712f0a5e57dfd3e5542ef0604b8739cd47be3"
+  integrity sha512-rqe1abd0vxMjmbPngo4NaYxTcR3Y4Hrmc/jg4T+sYz63yqlmJRknpEQfmWY+eDWPuMmix6iUIK+mv0zExjeLgA==
   dependencies:
     array-includes "^3.1.1"
     doctrine "^2.1.0"
@@ -1777,7 +1777,6 @@ eslint-plugin-react@^7.19.0:
     object.values "^1.1.1"
     prop-types "^15.7.2"
     resolve "^1.15.1"
-    semver "^6.3.0"
     string.prototype.matchall "^4.0.2"
     xregexp "^4.3.0"
 
