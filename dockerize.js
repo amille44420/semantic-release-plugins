@@ -5,6 +5,7 @@ const getConfig = pluginConfig => ({
     image: pluginConfig.image || process.env.DOCKER_IMAGE,
     dockerfile: pluginConfig.dockerfile || process.env.DOCKER_FILE,
     argVersion: pluginConfig.argVersion,
+    target: pluginConfig.target,
 });
 
 const runDocker = cmd =>
@@ -38,7 +39,7 @@ const getImageName = (tag, config) => {
 };
 
 const prepare = async (pluginConfig, context) => {
-    const { argVersion, dockerfile, ...config } = getConfig(pluginConfig);
+    const { argVersion, dockerfile, target, ...config } = getConfig(pluginConfig);
     const { nextRelease, logger } = context;
     const { version, channel } = nextRelease;
 
@@ -47,6 +48,7 @@ const prepare = async (pluginConfig, context) => {
 
     const command = [
         'build',
+        target && `--target ${target}`,
         `-t ${versionTag}`,
         dockerfile && `-f ${dockerfile}`,
         argVersion && `--build-arg ${argVersion}=${version}`,
