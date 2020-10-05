@@ -40,8 +40,18 @@ const getImageName = (tag, config) => {
 
 const prepare = async (pluginConfig, context) => {
     const { argVersion, dockerfile, target, ...config } = getConfig(pluginConfig);
-    const { nextRelease, logger } = context;
+    const { nextRelease, lastRelease, logger } = context;
     const { version, channel } = nextRelease;
+
+    if (lastRelease) {
+        const { version: lastVersion } = lastRelease;
+        const lastTag = getImageName(lastVersion, config);
+
+        const pullCommand = ['pull', lastTag].join(' ');
+
+        logger.log('Docker pulling for %s', lastTag);
+        await runDocker(pullCommand);
+    }
 
     // build a versioned image
     const versionTag = getImageName(version, config);
