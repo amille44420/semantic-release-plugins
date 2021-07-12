@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@amille/eslint-config@^1.3.5":
-  version "1.4.46"
-  resolved "https://registry.yarnpkg.com/@amille/eslint-config/-/eslint-config-1.4.46.tgz#abb8964e9a0bac8d161b575b9563542eaf980644"
-  integrity sha512-UQVgJGyQx1V/Ua8vNgXTImw01p09214xD5F9tWl6qGDmmtAU0YxTsSlkAh/qbqk00s4ZFEWrEpH0GW7aow2Gag==
+"@amille/eslint-config@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@amille/eslint-config/-/eslint-config-2.0.0.tgz#072344d0748ab5383c966e312014b6eef3cf2366"
+  integrity sha512-nCmFfWiHXe3YDWoUE8wpZKZeIZZv4JAXN8qGhv95WZtALN+qKEk15WMdyyhdh2BHTfg+BVRmqA2SQiyltKr+3A==
   dependencies:
     eslint-config-airbnb "^18.1.0"
     eslint-config-airbnb-base "^14.1.0"
