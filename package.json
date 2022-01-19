@@ -27,7 +27,7 @@
     "commitlint-circle": "^1.0.0",
     "eslint": "^7.0.0",
     "prettier": "^2.0.5",
-    "semantic-release": "^17.0.7"
+    "semantic-release": "^19.0.2"
   },
   "publishConfig": {
     "access": "public"
