@@ -21,7 +21,7 @@
   "homepage": "https://github.com/amille44420/semantic-release-plugins",
   "devDependencies": {
     "@amille/eslint-config": "^1.3.5",
-    "@commitlint/cli": "^12.1.1",
+    "@commitlint/cli": "^17.0.1",
     "@commitlint/config-conventional": "^12.1.1",
     "commitlint": "^12.1.1",
     "commitlint-circle": "^1.0.0",
